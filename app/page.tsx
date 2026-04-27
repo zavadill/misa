@@ -1,65 +1,114 @@
 import Image from "next/image";
+import Hero from "./components/layout/Hero";
+import { ArrowRight, Circle,  Play,  Plus } from "lucide-react";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className="pb-20 space-y-20">
+      <Hero />
+      <div>
+        <div className="max-w-7xl mx-auto flex flex-row items-center px-5 py-10 gap-5">
+          <h3 className="flex-1 text-3xl font-bold">Provide the best service with <br/> out of the box ideas</h3>
+          <h4 className="flex-1 text-xs">we are a passionate team of digital marketing enthusiasts dedicated to helping businesses succeed in the digital world. With years of experience and a deep understanding of the ever-evolving online landscape, we stay at the forefront of industry trends and technologies.</h4>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+        <div className="flex flex-row max-w-7xl mx-auto px-5 gap-5">
+          <section className="flex-1 min-h-[25vw] rounded-3xl border p-5 flex flex-col justify-between ">
+            <div>
+              <p className="text-7xl">920+</p>
+              <p>Project finish with superbly</p>
+            </div>
+            <div className="flex flex-row ">
+              <Circle size={60} />
+              <Circle size={60}   />
+              <Circle size={60}  />
+              <Circle size={60}  />
+              <Plus size={50}  />
+            </div>
+          </section>
+          <section className="relative flex-3 min-h-[25vw] rounded-3xl border p-5 bg-black flex items-center justify-center rounded-br-[50px]">
+            <p className="text-[5vw]">HOW WE WORK</p>
+            <Link href={""}>
+              <Play fill="black" className="absolute  text-black rounded-full border-8 border-white translate-x-2 translate-y-2 p-9 right-0 bottom-0 bg-pink-500" size={120}/>
+            </Link>
+          </section>
         </div>
-      </main>
+      </div>
+
+      <div className="bg-[#F5DEB3] mx-5 py-20 rounded-2xl">
+        <section className="max-w-7xl mx-auto flex flex-row items-center px-5 pb-10 gap-5">
+          <h3 className="flex-1 text-3xl font-bold">Digital Marketing & SEO<br/> Services That Grow Traffic &<br/> Increase Revenue</h3>
+          <div className="flex-1 space-y-5">
+            <h4 className=" text-xs">we are a passionate team of digital marketing enthusiasts dedicated to helping businesses succeed in the digital world. With years of experience and a deep understanding of the ever-evolving online landscape, we stay at the forefront of industry trends and technologies.</h4>
+            <Link className="px-5 py-2 border rounded-full" href={""}>See more</Link>
+          </div>
+        </section>
+
+        <section className="max-w-7xl mx-auto flex flex-row gap-5 text-white/40">
+          <div className="flex-1 p-5 flex flex-col justify-between bg-[#15151C] border rounded-4xl gap-10 ">
+            <h4 className="text-3xl">How a Digital Marketing Agency Can Boost Your Business</h4>
+            <div className="flex flex-row justify-between items-center">
+              <p className="w-2/3 text-sm">We are the top digital marketing agency for branding corp. We offer a fullrang engine....</p>
+              <Link className=" flex justify-end px-5 py-2 bg-white rounded-full text-black" href={""}><ArrowRight /></Link>
+            </div>
+          </div>
+          <div className="flex-1 p-5 flex flex-col justify-between bg-[#15151C] border rounded-4xl gap-10">
+            <h4 className="text-3xl">How a Digital Marketing Agency Can Boost Your Business</h4>
+            <div className="flex flex-row justify-between items-center">
+              <p className="w-2/3 text-sm">We are the top digital marketing agency for branding corp. We offer a fullrang engine....</p>
+              <Link className=" flex justify-end px-5 py-2 bg-black rounded-full text-white" href={""}><ArrowRight /></Link>
+            </div>
+          </div>
+          <div className="flex-1 p-5 flex flex-col justify-between bg-[#15151C] border rounded-4xl gap-10 ">
+            <h4 className="text-3xl">How a Digital Marketing Agency Can Boost Your Business</h4>
+            <div className="flex flex-row justify-between items-center">
+              <p className="w-2/3 text-sm">We are the top digital marketing agency for branding corp. We offer a fullrang engine....</p>
+              <Link className=" flex justify-end px-5 py-2 bg-black rounded-full text-white" href={""}><ArrowRight /></Link>
+            </div>
+          </div>
+        </section>
+      </div>
+
+
+      <div className="mx-5">
+        <div className="max-w-7xl mx-auto flex flex-col gap-5">
+          <p className="text-3xl font-bold ">"They thoroughly analyze our industry and target audience, allowing them to develop customized campaigns that effectively reach and engage our customers. Their creative ideas and cutting-edge techniques have helped us stay ahead of the competition."</p>
+          <div className="flex flex-row  justify-between items-center">
+            <div className="flex flex-row items-center gap-5">
+              <span className="w-15 h-15 bg-black rounded-full" />
+              <div className="flex flex-col">
+                <p className="font-bold text-lg">Michaela Zavadilová</p>
+                <p className="text-xs">CEO of Basecamp Corp</p>
+              </div>
+            </div>
+            <button>buttons</button>
+          </div>
+        </div>
+      </div>
+
+      <div className="">
+        <div className=" flex items-center justify-between px-10 mx-5 bg-black py-10 rounded-3xl">
+          <p className="text-white text-5xl">Ready to work with us?</p>
+          <Link className="border rounded-full px-10 py-2 bg-white text-black" href={""}>Get Started</Link>
+        </div>
+      </div>
+
+      <div className="mx-5 bg-gray-200 py-20 rounded-2xl">
+        <div className="px-5 max-w-7xl mx-auto flex flex-row gap-5">
+          <div className="space-y-5 flex-1">
+            <h3 className="text-5xl font-bold">Digital Marketing FAQs</h3>
+            <p>As a leading digital marketing agency, we are dedicated to providing comprehensive educational resources and answering frequently asked questions to help our clients.</p>
+            <div className="pt-5">
+              <Link className="px-5 py-3 border rounded-full" href={""}>More Questions</Link>
+              <Link className="px-5 py-3" href={""}>Contact Us</Link>
+            </div>
+          </div>
+          <div className="flex-1">
+
+          </div>
+        </div>
+      </div>
+
     </div>
   );
 }
