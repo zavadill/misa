@@ -19,7 +19,7 @@ const Navbar = () => {
     <div
       className={`fixed w-full top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'h-15 bg-white/70 backdrop-blur-md'
+          ? 'h-15 bg-white/80 backdrop-blur-md shadow-sm'
           : 'h-18 bg-white'
       }`}
     >
@@ -36,7 +36,11 @@ const Navbar = () => {
             <Link href={""}>Contact</Link>
           </div>
         </div>
-        <Link className='px-5 py-2 border border-gray-200 shadow-sm rounded-full' href={""}>
+        <Link className={`px-5 py-2 shadow-sm rounded-full 
+        ${scrolled
+        ? " "
+        : "border-gray-300 border"}
+        `} href={""}>
           Get started
         </Link>
       </nav>
