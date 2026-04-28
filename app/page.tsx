@@ -29,13 +29,13 @@ export default function Home() {
           <section className="relative flex-3 min-h-[25vw] rounded-3xl border p-5 bg-black flex items-center justify-center rounded-br-[50px]">
             <p className="text-[5vw]">HOW WE WORK</p>
             <Link href={""}>
-              <Play fill="black" className="absolute  text-black rounded-full border-8 border-white translate-x-2 translate-y-2 p-9 right-0 bottom-0 bg-pink-500" size={120}/>
+              <Play fill="black" className="absolute  text-black rounded-full border-8 border-white translate-x-2 translate-y-2 p-9 right-0 bottom-0 bg-pink-400" size={120}/>
             </Link>
           </section>
         </div>
       </div>
 
-      <div className="bg-[#F5DEB3] mx-5 py-20 rounded-2xl">
+      <div className="bg-gray-200 mx-5 py-20 rounded-2xl">
         <section className="max-w-7xl mx-auto flex flex-row items-center px-5 pb-10 gap-5">
           <h3 className="flex-1 text-3xl font-bold">Digital Marketing & SEO<br/> Services That Grow Traffic &<br/> Increase Revenue</h3>
           <div className="flex-1 space-y-5">
@@ -44,26 +44,26 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="max-w-7xl mx-auto flex flex-row gap-5 text-white/40">
-          <div className="flex-1 p-5 flex flex-col justify-between bg-[#15151C] border rounded-4xl gap-10 ">
+        <section className="max-w-7xl mx-auto flex flex-row gap-5 text-black">
+          <div className="flex-1 p-5 flex flex-col justify-between bg-white shadow-sm rounded-4xl gap-10 ">
             <h4 className="text-3xl">How a Digital Marketing Agency Can Boost Your Business</h4>
             <div className="flex flex-row justify-between items-center">
               <p className="w-2/3 text-sm">We are the top digital marketing agency for branding corp. We offer a fullrang engine....</p>
-              <Link className=" flex justify-end px-5 py-2 bg-white rounded-full text-black" href={""}><ArrowRight /></Link>
+              <Link className=" flex justify-end px-5 py-2 bg-pink-400 shadow-lg rounded-full text-black" href={""}><ArrowRight /></Link>
             </div>
           </div>
-          <div className="flex-1 p-5 flex flex-col justify-between bg-[#15151C] border rounded-4xl gap-10">
+          <div className="flex-1 p-5 flex flex-col justify-between bg-white shadow-sm rounded-4xl gap-10">
             <h4 className="text-3xl">How a Digital Marketing Agency Can Boost Your Business</h4>
             <div className="flex flex-row justify-between items-center">
               <p className="w-2/3 text-sm">We are the top digital marketing agency for branding corp. We offer a fullrang engine....</p>
-              <Link className=" flex justify-end px-5 py-2 bg-black rounded-full text-white" href={""}><ArrowRight /></Link>
+              <Link className=" flex justify-end px-5 py-2 bg-black rounded-full shadow-lg text-white" href={""}><ArrowRight /></Link>
             </div>
           </div>
-          <div className="flex-1 p-5 flex flex-col justify-between bg-[#15151C] border rounded-4xl gap-10 ">
+          <div className="flex-1 p-5 flex flex-col justify-between bg-white shadow-sm rounded-4xl gap-10 ">
             <h4 className="text-3xl">How a Digital Marketing Agency Can Boost Your Business</h4>
             <div className="flex flex-row justify-between items-center">
               <p className="w-2/3 text-sm">We are the top digital marketing agency for branding corp. We offer a fullrang engine....</p>
-              <Link className=" flex justify-end px-5 py-2 bg-black rounded-full text-white" href={""}><ArrowRight /></Link>
+              <Link className=" flex justify-end px-5 py-2 bg-black rounded-full shadow-lg text-white" href={""}><ArrowRight /></Link>
             </div>
           </div>
         </section>
@@ -86,8 +86,8 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="">
-        <div className=" flex items-center justify-between px-10 mx-5 bg-black py-10 rounded-3xl">
+      <div className="px-5">
+        <div className="max-w-7xl mx-auto flex items-center justify-between px-10  bg-black py-10 rounded-3xl">
           <p className="text-white text-5xl">Ready to work with us?</p>
           <Link className="border rounded-full px-10 py-2 bg-white text-black" href={""}>Get Started</Link>
         </div>
