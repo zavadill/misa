@@ -4,7 +4,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='py-20 bg-gray-800 text-white'>
+    <div className='py-20 bg-gray-200 text-black'>
       <footer className='max-w-7xl mx-auto flex flex-row gap-10'>
         <div className='space-y-5 flex-1'>
             <h3 className='text-4xl'>boostim</h3>
@@ -33,16 +33,16 @@ const Footer = () => {
             </div>
             <div className='flex flex-col space-y-2'>
                 <h4 className='text-2xl font-bold'>Contact</h4>
-                <Link className='flex flex-row gap-2' href={""}>
-                    <Phone />
+                <Link className='flex flex-row gap-2 items-center' href={""}>
+                    <Phone size={18}/>
                     <p>+420 777 777 777</p>
                 </Link>
-                <Link className='flex flex-row gap-2' href={""}>
-                    <Mail />
+                <Link className='flex flex-row gap-2 items-center' href={""}>
+                    <Mail size={18} />
                     <p>michaela@seznam.cz</p>
                 </Link>
-                <Link className='flex flex-row gap-2' href={""}>
-                    <MapPin />
+                <Link className='flex flex-row gap-2 items-center' href={""}>
+                    <MapPin size={18} />
                     <p>Olomouc, 198 54</p>
                 </Link>
             </div>

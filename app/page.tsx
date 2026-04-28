@@ -1,18 +1,43 @@
 import Image from "next/image";
 import Hero from "./components/layout/Hero";
-import { ArrowRight, Circle,  Play,  Plus } from "lucide-react";
+import { ArrowLeft, ArrowRight, Circle,  Play,  Plus } from "lucide-react";
 import Link from "next/link";
+import Marquee from "react-fast-marquee";
+import FAQRightSide from "./components/Faq";
 
 export default function Home() {
   return (
     <div className="pb-20 space-y-20">
       <Hero />
+      <div className="mx-5">
+        <div className="max-w-7xl mx-auto flex flex-col gap-5">
+          <p className="text-lg sm:text-3xl font-bold text-black/90">"They thoroughly analyze our industry and target audience, allowing them to develop customized campaigns that effectively reach and engage our customers. Their creative ideas and cutting-edge techniques have helped us stay ahead of the competition."</p>
+          <div className="flex flex-row  justify-between items-center">
+            <div className="flex flex-row items-center gap-5">
+              <span className="w-15 h-15 bg-black rounded-full" />
+              <div className="flex flex-col">
+                <p className="font-bold text-lg">Michaela Zavadilová</p>
+                <p className="text-xs">CEO of Basecamp Corp</p>
+              </div>
+            </div>
+            <div className="flex flex-row gap-5 items-center">
+              <button className="px-3 py-1 rounded-full border">
+                <ArrowLeft />
+              </button>
+              <p>1/3</p>
+              <button className="px-3 py-1 rounded-full border">
+                <ArrowRight />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
       <div>
         <div className="max-w-7xl mx-auto flex flex-row items-center px-5 py-10 gap-5">
           <h3 className="flex-1 text-3xl font-bold">Provide the best service with <br/> out of the box ideas</h3>
           <h4 className="flex-1 text-xs">we are a passionate team of digital marketing enthusiasts dedicated to helping businesses succeed in the digital world. With years of experience and a deep understanding of the ever-evolving online landscape, we stay at the forefront of industry trends and technologies.</h4>
         </div>
-        <div className="flex flex-row max-w-7xl mx-auto px-5 gap-5">
+        <div className="flex flex-col sm:flex-row max-w-7xl mx-auto px-5 gap-5">
           <section className="flex-1 min-h-[25vw] rounded-3xl border p-5 flex flex-col justify-between ">
             <div>
               <p className="text-7xl">920+</p>
@@ -36,7 +61,7 @@ export default function Home() {
       </div>
 
       <div className="bg-gray-200 mx-5 py-20 rounded-2xl">
-        <section className="max-w-7xl mx-auto flex flex-row items-center px-5 pb-10 gap-5">
+        <section className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center px-5 pb-10 gap-5">
           <h3 className="flex-1 text-3xl font-bold">Digital Marketing & SEO<br/> Services That Grow Traffic &<br/> Increase Revenue</h3>
           <div className="flex-1 space-y-5">
             <h4 className=" text-xs">we are a passionate team of digital marketing enthusiasts dedicated to helping businesses succeed in the digital world. With years of experience and a deep understanding of the ever-evolving online landscape, we stay at the forefront of industry trends and technologies.</h4>
@@ -44,7 +69,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="max-w-7xl mx-auto flex flex-row gap-5 text-black">
+        <section className="max-w-7xl mx-auto flex flex-col md:flex-row gap-5 px-5 text-black">
           <div className="flex-1 p-5 flex flex-col justify-between bg-white shadow-sm rounded-4xl gap-10 ">
             <h4 className="text-3xl">How a Digital Marketing Agency Can Boost Your Business</h4>
             <div className="flex flex-row justify-between items-center">
@@ -69,29 +94,33 @@ export default function Home() {
         </section>
       </div>
 
-
-      <div className="mx-5">
-        <div className="max-w-7xl mx-auto flex flex-col gap-5">
-          <p className="text-3xl font-bold ">"They thoroughly analyze our industry and target audience, allowing them to develop customized campaigns that effectively reach and engage our customers. Their creative ideas and cutting-edge techniques have helped us stay ahead of the competition."</p>
-          <div className="flex flex-row  justify-between items-center">
-            <div className="flex flex-row items-center gap-5">
-              <span className="w-15 h-15 bg-black rounded-full" />
-              <div className="flex flex-col">
-                <p className="font-bold text-lg">Michaela Zavadilová</p>
-                <p className="text-xs">CEO of Basecamp Corp</p>
-              </div>
-            </div>
-            <button>buttons</button>
+      <div>
+        <section className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center px-5 pb-10 gap-5">
+          <h3 className="flex-1 text-3xl font-bold">Náš team</h3>
+          <div className="flex-1 space-y-5">
+            <h4 className=" text-xs">we are a passionate team of digital marketing enthusiasts dedicated to helping businesses succeed in the digital world. With years of experience and a deep understanding of the ever-evolving online landscape, we stay at the forefront of industry trends and technologies.</h4>
+            <Link className="px-5 py-2 border rounded-full" href={""}>See more</Link>
           </div>
-        </div>
+        </section>
+        <section className="max-w-7xl mx-auto flex flex-row gap-5 ">
+          <div className="flex-1 space-y-2">
+            <span className="bg-gray-200 animate-pulse h-100 block rounded-2xl"/>
+            <p className="text-xl font-bold">Michaela Zavadilová</p>
+            <p className="text-xs">Founder</p>
+          </div>
+          <div className="flex-1 space-y-2">
+            <span className="bg-gray-200 animate-pulse h-100 block rounded-2xl"/>
+            <p className="text-xl font-bold">Michaela Zavadilová</p>
+            <p className="text-xs">Founder</p>
+          </div>
+          <div className="flex-1 space-y-2">
+            <span className="bg-gray-200 animate-pulse h-100 block rounded-2xl"/>
+            <p className="text-xl font-bold">Michaela Zavadilová</p>
+            <p className="text-xs">Founder</p>
+          </div>
+        </section>
       </div>
 
-      <div className="px-5">
-        <div className="max-w-7xl mx-auto flex items-center justify-between px-10  bg-black py-10 rounded-3xl">
-          <p className="text-white text-5xl">Ready to work with us?</p>
-          <Link className="border rounded-full px-10 py-2 bg-white text-black" href={""}>Get Started</Link>
-        </div>
-      </div>
 
       <div className="mx-5 bg-gray-200 py-20 rounded-2xl">
         <div className="px-5 max-w-7xl mx-auto flex flex-row gap-5">
@@ -103,9 +132,58 @@ export default function Home() {
               <Link className="px-5 py-3" href={""}>Contact Us</Link>
             </div>
           </div>
-          <div className="flex-1">
+          <FAQRightSide />
+        </div>
+      </div>
 
-          </div>
+<div>
+  <section className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center px-5 pb-10 gap-5">
+    <h3 className="flex-1 text-3xl font-bold">Naše práce</h3>
+    <div className="flex-1 space-y-5">
+      <h4 className="text-xs">
+        Podívejte se na projekty, které jsme realizovali pro naše klienty.
+        Každý z nich je zaměřený na výkon, růst a reálné výsledky.
+      </h4>
+      <Link className="px-5 py-2 border rounded-full" href={""}>
+        See more
+      </Link>
+    </div>
+  </section>
+  <section className="max-w-7xl mx-auto px-5">
+    <div className="grid grid-cols-2 md:grid-cols-3">
+
+      <div className="bg-gray-200 h-70 flex items-end p-3">
+        <p className="text-2xl font-bold">CAFE DISTRICT</p>
+      </div>
+
+      <div className="bg-gray-300 h-70 flex items-end p-3">
+        <p className="text-2xl font-bold">BRAND DESIGN</p>
+      </div>
+
+      <div className="bg-gray-200 h-70 flex items-end p-3">
+        <p className="text-2xl font-bold">E-SHOP</p>
+      </div>
+
+      <div className="bg-gray-300 h-70 flex items-end p-3">
+        <p className="text-2xl font-bold">STARTUP</p>
+      </div>
+
+      <div className="bg-gray-200 h-70 flex items-end p-3">
+        <p className="text-2xl font-bold">MARKETING</p>
+      </div>
+
+      <div className="bg-gray-300 h-70 flex items-end p-3">
+        <p className="text-2xl font-bold">SEO PROJECT</p>
+      </div>
+
+    </div>
+  </section>
+</div>
+
+      <div className="px-5">
+        <div className="max-w-7xl mx-auto flex items-center justify-between px-10  bg-black py-10 rounded-3xl">
+          <p className="text-white text-5xl">Ready to work with us?</p>
+          <Link className="border rounded-full px-10 py-2 bg-white text-black" href={""}>Get Started</Link>
         </div>
       </div>
 
