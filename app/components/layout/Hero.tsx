@@ -1,7 +1,24 @@
-import React from 'react'
+ 'use client'
+
+import React, { Suspense } from 'react'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import Image from 'next/image'
+import { Canvas } from '@react-three/fiber'
+import { OrbitControls, useGLTF } from '@react-three/drei'
+
+const IphoneModel = () => {
+  const { scene } = useGLTF('/assets/models/iphone.glb')
+  return <primitive object={scene} scale={2} position={[-1, 0.25, -0.2]} rotation={[0, 0.2, 0]} />
+}
+
+const MacbookModel = () => {
+  const { scene } = useGLTF('/assets/models/macbook.glb')
+  return <primitive object={scene} scale={0.1} position={[0.5, 0, 0]} rotation={[0, -0.5, 0]} />
+}
+
+useGLTF.preload('/assets/models/iphone.glb')
+useGLTF.preload('/assets/models/macbook.glb')
 
 const Hero = () => {
   return (
@@ -28,22 +45,20 @@ const Hero = () => {
                 />
             </div>
         </section>
-        <section className='flex-1 hidden sm:flex justify-center items-center'>
-          <div className='flex flex-col gap-5'>
-            <div className='flex flex-row gap-5'>
-              <div className=' aspect-square h-50 rounded-tr-2xl rounded-bl-2xl rounded-br-2xl overflow-hidden'>
-                <div className='rounded-tl-full bg-black w-full h-full'>
-
-                </div>
-              </div>
-              <div className='bg-black aspect-square h-50 w-60 rounded-2xl overflow-hidden p-5'>
-2
-              </div>
-            </div>
-            <div className='h-50 bg-black rounded-2xl overflow-hidden p-5'>
-3
-            </div>
-          </div>
+        <section className='flex-1 justify-center items-center h-[80vh]'>
+            <Canvas camera={{ position: [0, 1.5, 5], fov: 45 }}>
+              <ambientLight intensity={0.45} />
+              <hemisphereLight intensity={0.6} groundColor={'#d1d5db'} />
+              <directionalLight position={[-3, 3, 2]} intensity={1.4} />
+              <pointLight position={[-1.2, 1.2, 1.6]} intensity={1.2} distance={8} />
+              <directionalLight position={[3, 2.5, 1.5]} intensity={1.1} />
+              <pointLight position={[0.9, 0.8, 1.2]} intensity={0.9} distance={7} />
+              <directionalLight position={[0, -1.5, -2]} intensity={0.35} />
+              <Suspense fallback={null}>
+                <IphoneModel />
+                <MacbookModel />
+              </Suspense>
+            </Canvas>
         </section>
       </header> 
     </div>
