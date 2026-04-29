@@ -38,10 +38,10 @@ export default function FAQRightSide() {
               }
               className="w-full flex justify-between items-center text-left"
             >
-              <span className="font-semibold text-lg">
+              <span className="font-semibold text-base sm:text-lg">
                 {faq.question}
               </span>
-              <span className="text-2xl">
+              <span className="text-base sm:text-2xl">
                 {openIndex === index ? "−" : "+"}
               </span>
             </button>
