@@ -91,7 +91,7 @@ const Navbar = () => {
           <Link
             href={""}
             onClick={() => setMenuOpen(false)}
-            className=" px-8 py-3 bg-pink-500 shadow-sm rounded-full"
+            className=" px-8 py-3 bg-pink-500 text-white/80 shadow-sm rounded-full"
           >
             Get started
           </Link>
