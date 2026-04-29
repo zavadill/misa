@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
+import Image from 'next/image'
 
 const Hero = () => {
   return (
@@ -16,13 +17,15 @@ const Hero = () => {
                 </Link>
                 <Link className='px-5 py-2 underline' href={""}>View case study</Link>
             </div>
-            <div className='flex flex-row gap-10 items-center mt-20'>
-                <p className=' text-xs sm:text-base'>Trusted by the world's<br/> biggest brands</p>
-                <div className='flex flex-row gap-5 text-gray-500'>
-                    <p>afterpay</p>
-                    <p>basecamp</p>
-                    <p>maze</p>
-                </div>
+            <div className='flex flex-row gap-10 justify-center sm:justify-start items-center mt-10'>
+                <p className=' text-xs sm:text-base w-1/4'>Trusted by the world's biggest brands</p>
+                <Image 
+                  src={"/assets/logo/company-logos.png"}
+                  alt='Logo firem'
+                  className='w-50 sm:w-100'
+                  width={2000}
+                  height={1000}
+                />
             </div>
         </section>
         <section className='flex-1 hidden sm:flex justify-center items-center'>
