@@ -5,8 +5,8 @@ import Image from 'next/image'
 
 const Hero = () => {
   return (
-    <div className=''>
-      <header className='max-w-7xl mx-auto flex sm:flex-row min-h-screen  items-center gap-5 px-5'>
+    <div id='header' className='bg-linear-to-t from-pink-200 via-white to-white'>
+      <header className='max-w-7xl mx-auto flex sm:flex-row min-h-screen items-end pb-10 sm:pb-0 sm:items-center gap-5 px-5'>
         <section className='flex-1 space-y-7'>
             <h1 className='text-4xl sm:text-7xl font-bold leading-8 sm:leading-15'>Stay ahead of the curve with our forward-thinking</h1>
             <h2 className='text-gray-500 text-xs sm:text-base'>An award-winning SEO agency with disciplines in digital marketing. design, and website development. focused on understanding you.</h2>

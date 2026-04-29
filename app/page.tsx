@@ -11,7 +11,7 @@ export default function Home() {
       <Hero />
       <div className="mx-5">
         <div className="max-w-7xl mx-auto flex flex-col gap-5">
-          <p className="text-xl sm:text-3xl text-pink-500 font-bold">"They thoroughly analyze our industry and target audience, allowing them to develop customized campaigns that effectively reach and engage our customers. Their creative ideas and cutting-edge techniques have helped us stay ahead of the competition."</p>
+          <p className="text-xl sm:text-3xl text-black font-bold">"They thoroughly analyze our industry and target audience, allowing them to develop customized campaigns that effectively reach and engage our customers. Their creative ideas and cutting-edge techniques have helped us stay ahead of the competition."</p>
           <div className="flex flex-row  justify-between items-center">
             <div className="flex flex-row items-center gap-5">
               <span className="w-10 h-10 sm:w-15 sm:h-15 bg-black rounded-full" />
@@ -32,7 +32,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div>
+      <div id="services">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row sm:items-center px-5 py-10 gap-5">
           <h3 className="sm:flex-1 text-2xl sm:text-3xl font-bold">Provide the best service with <br/> out of the box ideas</h3>
           <h4 className="sm:flex-1 text-xs">we are a passionate team of digital marketing enthusiasts dedicated to helping businesses succeed in the digital world. With years of experience and a deep understanding of the ever-evolving online landscape, we stay at the forefront of industry trends and technologies.</h4>
@@ -41,11 +41,11 @@ export default function Home() {
           <section className="relative flex-1 min-h-[25vw] rounded-3xl border p-5 flex flex-col justify-between overflow-hidden bg-black text-white">
             
             {/* 🔥 blob pozadí */}
-            <div className="absolute w-[300px] h-[300px] bg-white/20 rounded-full blur-[100px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+            <div className="absolute w-[300px] h-[300px] bg-white/40 rounded-full blur-[100px] top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2" />
 
             {/* content */}
             <div className="relative z-10">
-              <p className="text-8xl text-white">920<span className="text-pink-300 ">+</span></p>
+              <p className="text-8xl text-white">920<span className="text-pink-300 text-6xl">+</span></p>
               <p>Project finish with superbly</p>
             </div>
 
@@ -64,7 +64,7 @@ export default function Home() {
           >
             <div className="absolute inset-0 bg-black/50 rounded-3xl rounded-br-[50px]"></div>
 
-            <p className="text-3xl sm:text-6xl text-white/40 z-10 ">HOW WE WORK</p>
+            <p className="text-3xl sm:text-6xl text-white/60 z-10 ">HOW WE WORK</p>
 
             <Link href={""}>
               <Play
@@ -77,7 +77,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-gray-200 mx-5 py-20 rounded-2xl">
+      <div id="services-two" className="bg-gray-200 mx-5 py-20 rounded-2xl">
         <section className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center px-5 pb-10 gap-5">
           <h3 className="flex-1 text-2xl sm:text-3xl font-bold">Digital Marketing & SEO Services That Grow Traffic & Increase Revenue</h3>
           <div className="flex-1 text-xs space-y-5">
@@ -111,7 +111,7 @@ export default function Home() {
         </section>
       </div>
 
-      <div className="mx-5">
+      <div id="team" className="mx-5">
         <section className="max-w-7xl mx-auto flex flex-col sm:flex-row sm:items-center px-5 pb-10 gap-5">
           <h3 className="flex-1 text-2xl sm:text-3xl font-bold">Náš team</h3>
           <div className="flex-1 space-y-5">
@@ -160,7 +160,7 @@ export default function Home() {
       </div>
 
 
-      <div className="mx-5 bg-gray-200 py-20 rounded-2xl">
+      <div id="faq" className="mx-5 bg-gray-200 py-20 rounded-2xl">
         <div className="px-5 max-w-7xl mx-auto flex flex-col sm:flex-row gap-5">
           <div className="space-y-5 flex-1 pb-5">
             <h3 className="text-2xl sm:text-5xl font-bold">Digital Marketing FAQs</h3>
@@ -174,49 +174,49 @@ export default function Home() {
         </div>
       </div>
 
-<div>
-  <section className="max-w-7xl mx-auto flex flex-col sm:flex-row sm:items-center px-5 pb-10 gap-5">
-    <h3 className="flex-1 text-2xl sm:text-3xl font-bold">Naše práce</h3>
-    <div className="flex-1 space-y-5">
-      <h4 className="text-xs">
-        Podívejte se na projekty, které jsme realizovali pro naše klienty.
-        Každý z nich je zaměřený na výkon, růst a reálné výsledky.
-      </h4>
-      <Link className="px-5 py-2 border rounded-full" href={""}>
-        See more
-      </Link>
-    </div>
-  </section>
-  <section className="max-w-7xl mx-auto px-5">
-    <div className="grid grid-cols-2 md:grid-cols-3">
+      <div id="projects">
+        <section className="max-w-7xl mx-auto flex flex-col sm:flex-row sm:items-center px-5 pb-10 gap-5">
+          <h3 className="flex-1 text-2xl sm:text-3xl font-bold">Naše práce</h3>
+          <div className="flex-1 space-y-5">
+            <h4 className="text-xs">
+              Podívejte se na projekty, které jsme realizovali pro naše klienty.
+              Každý z nich je zaměřený na výkon, růst a reálné výsledky.
+            </h4>
+            <Link className="px-5 py-2 border rounded-full" href={""}>
+              See more
+            </Link>
+          </div>
+        </section>
+        <section className="max-w-7xl mx-auto px-5">
+          <div className="grid grid-cols-2 md:grid-cols-3">
 
-      <div className="bg-gray-200 h-50 sm:h-70 flex items-end p-3">
-        <p className="text-xl sm:text-2xl font-bold">CAFE DISTRICT</p>
+            <div className="bg-gray-200 h-50 sm:h-70 flex items-end p-3">
+              <p className="text-xl sm:text-2xl font-bold">CAFE DISTRICT</p>
+            </div>
+
+            <div className="bg-gray-300 h-50 sm:h-70 flex items-end p-3">
+              <p className="text-xl sm:text-2xl font-bold">BRAND DESIGN</p>
+            </div>
+
+            <div className="bg-gray-200 h-50 sm:h-70 flex items-end p-3">
+              <p className="text-xl sm:text-2xl font-bold">E-SHOP</p>
+            </div>
+
+            <div className="bg-gray-300 h-50 sm:h-70 flex items-end p-3">
+              <p className="text-xl sm:text-2xl font-bold">STARTUP</p>
+            </div>
+
+            <div className="bg-gray-200 h-50 sm:h-70 flex items-end p-3">
+              <p className="text-xl sm:text-2xl font-bold">MARKETING</p>
+            </div>
+
+            <div className="bg-gray-300 h-50 sm:h-70 flex items-end p-3">
+              <p className="text-xl sm:text-2xl font-bold">SEO PROJECT</p>
+            </div>
+
+          </div>
+        </section>
       </div>
-
-      <div className="bg-gray-300 h-50 sm:h-70 flex items-end p-3">
-        <p className="text-xl sm:text-2xl font-bold">BRAND DESIGN</p>
-      </div>
-
-      <div className="bg-gray-200 h-50 sm:h-70 flex items-end p-3">
-        <p className="text-xl sm:text-2xl font-bold">E-SHOP</p>
-      </div>
-
-      <div className="bg-gray-300 h-50 sm:h-70 flex items-end p-3">
-        <p className="text-xl sm:text-2xl font-bold">STARTUP</p>
-      </div>
-
-      <div className="bg-gray-200 h-50 sm:h-70 flex items-end p-3">
-        <p className="text-xl sm:text-2xl font-bold">MARKETING</p>
-      </div>
-
-      <div className="bg-gray-300 h-50 sm:h-70 flex items-end p-3">
-        <p className="text-xl sm:text-2xl font-bold">SEO PROJECT</p>
-      </div>
-
-    </div>
-  </section>
-</div>
 
       <div className="px-5">
         <div className="relative max-w-7xl mx-auto flex flex-col sm:flex-row gap-5 items-center justify-between px-10  bg-black py-10 rounded-3xl">
