@@ -1,7 +1,10 @@
+
 import React from 'react'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import Image from 'next/image'
+
+
 
 const Hero = () => {
   return (
@@ -36,12 +39,12 @@ const Hero = () => {
 
                 </div>
               </div>
-              <div className='bg-black aspect-square h-50 w-60 rounded-2xl overflow-hidden p-5'>
+              <div className='bg-black aspect-square h-50 w-61 rounded-2xl overflow-hidden p-5'>
  2
               </div>
             </div>
             <div className='h-50 bg-black rounded-2xl overflow-hidden p-5'>
-3
+ 3
             </div>
           </div>
         </section>
