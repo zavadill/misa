@@ -37,7 +37,7 @@ const Hero = () => {
                 </div>
               </div>
               <div className='bg-black aspect-square h-50 w-60 rounded-2xl overflow-hidden p-5'>
-2
+ 2
               </div>
             </div>
             <div className='h-50 bg-black rounded-2xl overflow-hidden p-5'>
