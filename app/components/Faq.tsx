@@ -3,24 +3,24 @@ import { useState } from "react";
 
 const faqs = [
   {
-    question: "Why is digital marketing important for my business?",
+    question: "Proč investovat do sociálních sítí a online marketingu?",
     answer:
-      "Digital marketing allows businesses to reach and engage with a wider audience, generate leads, drive website traffic, and increase brand visibility. It provides measurable results and allows optimization based on data.",
+      "Díky nim oslovíte lidi tam, kde už tráví čas – a můžete měřit, co funguje. Kombinace obsahu, reklamy a webu vám přivádí zájemce, posiluje značku a dává přehledné čísla místo pocitů.",
   },
   {
-    question: "How can digital marketing help improve my website's visibility?",
+    question: "Jak zlepšíte viditelnost mého webu ve vyhledávání?",
     answer:
-      "Through SEO, paid ads, and content marketing, your website can rank higher in search engines and reach more relevant users.",
+      "Pracujeme na struktuře stránek, obsahu i technickém základu (SEO), doplňujeme to cílenou reklamou tam, kde dává smysl. Cíl je, aby vás našli ti, kteří už hledají právě vaše služby.",
   },
   {
-    question: "How long does it take to see results from digital marketing efforts?",
+    question: "Jak brzy uvidím první výsledky?",
     answer:
-      "It depends on the strategy. Paid ads can work almost instantly, while SEO usually takes a few months.",
+      "Záleží na kanálu a rozpočtu. U placené reklamy často během dnů, u organického růstu na sítích a SEO počítejte spíš s týdny až měsíci – ale s jasným plánem a pravidelným vyhodnocováním.",
   },
   {
-    question: "How do you measure the success of digital marketing campaigns?",
+    question: "Jak měříte úspěch kampaní a obsahu?",
     answer:
-      "Using metrics like traffic, conversions, ROI, CTR, and engagement rates.",
+      "Sledujeme například návštěvnost, konverze, návratnost investic (ROI), zapojení u příspěvků a cenu za kontakt. Vždy vycházíme z cílů, které si na začátku společně nastavíme.",
   },
 ];
 

@@ -43,11 +43,11 @@ const Navbar = () => {
 
             {/* desktop menu */}
             <div className='hidden md:flex flex-row gap-5'>
-              <Link href={""}>Service</Link>
-              <Link href={""}>Agency</Link>
-              <Link href={""}>Case study</Link>
-              <Link href={""}>Resources</Link>
-              <Link href={""}>Contact</Link>
+              <Link href={""}>Služby</Link>
+              <Link href={""}>O nás</Link>
+              <Link href={""}>Reference</Link>
+              <Link href={""}>Blog</Link>
+              <Link href={""}>Kontakt</Link>
             </div>
           </div>
 
@@ -59,7 +59,7 @@ const Navbar = () => {
               } hidden md:block`}
               href={""}
             >
-              Get started
+              Začít spolupráci
             </Link>
 
             {/* 🍔 hamburger */}
@@ -82,18 +82,18 @@ const Navbar = () => {
         }`}
       >
         <div className="flex flex-col items-center gap-5 text-4xl font-semibold">
-          <Link href={""} onClick={() => setMenuOpen(false)}>Service</Link>
-          <Link href={""} onClick={() => setMenuOpen(false)}>Agency</Link>
-          <Link href={""} onClick={() => setMenuOpen(false)}>Case study</Link>
-          <Link href={""} onClick={() => setMenuOpen(false)}>Resources</Link>
-          <Link href={""} onClick={() => setMenuOpen(false)}>Contact</Link>
+          <Link href={""} onClick={() => setMenuOpen(false)}>Služby</Link>
+          <Link href={""} onClick={() => setMenuOpen(false)}>O nás</Link>
+          <Link href={""} onClick={() => setMenuOpen(false)}>Reference</Link>
+          <Link href={""} onClick={() => setMenuOpen(false)}>Blog</Link>
+          <Link href={""} onClick={() => setMenuOpen(false)}>Kontakt</Link>
 
           <Link
             href={""}
             onClick={() => setMenuOpen(false)}
             className=" px-8 py-3 bg-pink-500 text-white/80 shadow-sm rounded-full"
           >
-            Get started
+            Začít spolupráci
           </Link>
         </div>
       </div>
