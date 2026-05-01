@@ -11,7 +11,7 @@ const Hero = () => {
     <div id='header' className='bg-linear-to-t from-pink-200 via-white to-white'>
       <header className='max-w-7xl mx-auto flex sm:flex-row min-h-screen items-end pb-10 sm:pb-0 sm:items-center gap-5 px-5'>
         <section className='flex-1 space-y-7'>
-            <h1 className='text-4xl sm:text-7xl font-bold leading-8 sm:leading-15'>Buďte o krok napřed – sociální sítě, marketing a weby</h1>
+            <h1 className='text-4xl sm:text-7xl font-bold leading-8 sm:leading-15'>Sociální sítě, marketing a tvorba webů</h1>
             <h2 className='text-gray-500 text-xs sm:text-base'>Postaráme se o vaši online přítomnost: obsah na sociálních sítích, kampaně a weby, které dávají smysl vašemu byznysu a mluví jazykem vašich zákazníků.</h2>
             <div className='flex flex-col  sm:flex-row gap-5'>
                 <Link className='px-5 py-2 border flex flex-row items-center gap-5 bg-black text-white shadow-sm rounded-full' href={""}>

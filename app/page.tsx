@@ -200,14 +200,25 @@ export default function Home() {
       </div>
 
       <div className="px-5">
-        <div className="relative max-w-7xl mx-auto flex flex-col sm:flex-row gap-5 items-center justify-between px-10  bg-black py-10 rounded-3xl">
+        <div className="relative mx-auto flex max-w-7xl flex-col items-center justify-between gap-8 overflow-hidden rounded-3xl bg-black px-8 py-12 text-center sm:flex-row sm:gap-6 sm:px-10 sm:py-12 sm:text-left">
+          <div
+            className="pointer-events-none absolute h-[280px] w-[280px] rounded-full bg-pink-500/25 blur-[100px] top-1/2 left-[15%] -translate-x-1/2 -translate-y-1/2"
+            aria-hidden
+          />
+          <div
+            className="pointer-events-none absolute h-[260px] w-[260px] rounded-full bg-white/20 blur-[90px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+            aria-hidden
+          />
 
-          <div className="absolute w-[300px] h-[300px] bg-white/30 rounded-full blur-[100px] top-1/2 left-1/5 -translate-x-1/2 -translate-y-1/2" />
-          <div className="absolute w-[300px] h-[300px] bg-white/30 rounded-full blur-[100px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
-
-
-          <p className="text-white text-2xl sm:text-5xl">Pojďme společně posunout váš byznys online</p>
-          <Link className="border rounded-full px-10 py-2 bg-white text-black" href={""}>Domluvit spolupráci</Link>
+          <p className="relative z-10 max-w-2xl text-2xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
+            Pojďme společně posunout váš byznys online
+          </p>
+          <Link
+            className="relative z-10 shrink-0 rounded-full border border-white/20 bg-white px-8 py-3 text-sm font-semibold text-black shadow-lg transition hover:bg-pink-100 hover:text-black"
+            href=""
+          >
+            Domluvit spolupráci
+          </Link>
         </div>
       </div>
 
